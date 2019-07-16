@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NGDR_Workstation", "NGDR_Workstation.csproj", "{6EB99D67-F55A-41A2-85EB-7A41A5CF851F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9438547F-C07B-4F32-8397-7BC9AC03325B} = {9438547F-C07B-4F32-8397-7BC9AC03325B}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JTay.FrameWork", "..\..\JTay.FrameWork\JTay.FrameWork.csproj", "{9438547F-C07B-4F32-8397-7BC9AC03325B}"
 EndProject

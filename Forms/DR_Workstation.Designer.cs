@@ -95,7 +95,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // editToolStripMenuItem
@@ -111,19 +111,19 @@
             // connectionStringsToolStripMenuItem
             // 
             this.connectionStringsToolStripMenuItem.Name = "connectionStringsToolStripMenuItem";
-            this.connectionStringsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.connectionStringsToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.connectionStringsToolStripMenuItem.Text = "Connection Strings";
             // 
             // fileSystemToolStripMenuItem
             // 
             this.fileSystemToolStripMenuItem.Name = "fileSystemToolStripMenuItem";
-            this.fileSystemToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fileSystemToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.fileSystemToolStripMenuItem.Text = "File System";
             // 
             // emailAddressesToolStripMenuItem
             // 
             this.emailAddressesToolStripMenuItem.Name = "emailAddressesToolStripMenuItem";
-            this.emailAddressesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.emailAddressesToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.emailAddressesToolStripMenuItem.Text = "Email Addresses";
             // 
             // helpToolStripMenuItem
@@ -323,6 +323,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "DR_Workstation";
             this.Text = "NextGen Nightly File Creator";
+            this.Load += new System.EventHandler(this.DR_Workstation_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
