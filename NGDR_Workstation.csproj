@@ -38,6 +38,9 @@
     <Reference Include="Infragistics4.Win.UltraWinEditors.v17.2, Version=17.2.20172.2006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Win.UltraWinGrid.v17.2, Version=17.2.20172.2006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
     <Reference Include="Infragistics4.Win.v17.2, Version=17.2.20172.2006, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb" />
+    <Reference Include="JTay.FrameWork">
+      <HintPath>..\..\JTay.FrameWork\bin\Debug\JTay.FrameWork.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -115,6 +118,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\JTay.ConnectionStringManager\JTay.ConnectionStringManager\JTay.ConnectionStringManager\JTay.ConnectionStringManager.csproj">
+      <Project>{E3697EE2-1457-4F76-BCD8-F8C21E2C0788}</Project>
+      <Name>JTay.ConnectionStringManager</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
