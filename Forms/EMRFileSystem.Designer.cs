@@ -33,43 +33,44 @@
             this.lblDB = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblFVersion = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblDocLocation = new Infragistics.Win.Misc.UltraLabel();
-            this.btnSave = new Infragistics.Win.Misc.UltraButton();
-            this.btnDelete = new Infragistics.Win.Misc.UltraButton();
-            this.txtDocPath = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.btnBrowseDP = new Infragistics.Win.Misc.UltraButton();
+            this.btnSaveZPD = new Infragistics.Win.Misc.UltraButton();
+            this.btnDeleteZPD = new Infragistics.Win.Misc.UltraButton();
+            this.txtZipDocPath = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.btnBrowseZDP = new Infragistics.Win.Misc.UltraButton();
             this.lblLocPath = new Infragistics.Win.Misc.UltraLabel();
-            this.btnSaveLocal = new Infragistics.Win.Misc.UltraButton();
-            this.btnDeleteLocal = new Infragistics.Win.Misc.UltraButton();
-            this.txtLocalPath = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.btnBrowseLP = new Infragistics.Win.Misc.UltraButton();
+            this.btnSaveEDP = new Infragistics.Win.Misc.UltraButton();
+            this.btnDeleteEDP = new Infragistics.Win.Misc.UltraButton();
+            this.txtExtractDocPath = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.btnBrowseEDP = new Infragistics.Win.Misc.UltraButton();
             this.lblUmageZipPath = new Infragistics.Win.Misc.UltraLabel();
-            this.btnSaveImageZip = new Infragistics.Win.Misc.UltraButton();
-            this.btnDeleteImageZip = new Infragistics.Win.Misc.UltraButton();
-            this.txtImageZip = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.btnBrowseIZ = new Infragistics.Win.Misc.UltraButton();
+            this.btnSaveIP = new Infragistics.Win.Misc.UltraButton();
+            this.btnDeleteIP = new Infragistics.Win.Misc.UltraButton();
+            this.txtImagePath = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.btnBrowseIP = new Infragistics.Win.Misc.UltraButton();
             this.lblImageExtractPath = new Infragistics.Win.Misc.UltraLabel();
-            this.btnSaveImageExtract = new Infragistics.Win.Misc.UltraButton();
-            this.btnImageExtractDelete = new Infragistics.Win.Misc.UltraButton();
-            this.txtImageExtract = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
-            this.btnBrowseIE = new Infragistics.Win.Misc.UltraButton();
+            this.btnSaveIZP = new Infragistics.Win.Misc.UltraButton();
+            this.btnDeleteIZP = new Infragistics.Win.Misc.UltraButton();
+            this.txtImageZipPath = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
+            this.btnBrowseIZP = new Infragistics.Win.Misc.UltraButton();
+            this.lblSmtp = new Infragistics.Win.Misc.UltraLabel();
+            this.btnSaveSmtp = new Infragistics.Win.Misc.UltraButton();
+            this.btnDeleteSmtp = new Infragistics.Win.Misc.UltraButton();
+            this.txtSMTP = new Infragistics.Win.UltraWinEditors.UltraTextEditor();
             this.ultraLabel1 = new Infragistics.Win.Misc.UltraLabel();
             this.btnSaveGC = new Infragistics.Win.Misc.UltraButton();
             this.btnDeleteGC = new Infragistics.Win.Misc.UltraButton();
-            this.ultraLabel2 = new Infragistics.Win.Misc.UltraLabel();
-            this.btnSaveAppt = new Infragistics.Win.Misc.UltraButton();
-            this.btnDeleteAppt = new Infragistics.Win.Misc.UltraButton();
             this.uneGC = new Infragistics.Win.UltraWinEditors.UltraNumericEditor();
-            this.neAppt = new Infragistics.Win.UltraWinEditors.UltraNumericEditor();
             this.btnSaveAll = new Infragistics.Win.Misc.UltraButton();
             this.btnDeleteAll = new Infragistics.Win.Misc.UltraButton();
             this.btnClose = new Infragistics.Win.Misc.UltraButton();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDocPath)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtLocalPath)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtImageZip)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtImageExtract)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtZipDocPath)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtExtractDocPath)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtImagePath)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtImageZipPath)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSMTP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uneGC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.neAppt)).BeginInit();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -78,7 +79,7 @@
             this.lblAppVersion,
             this.lblDB,
             this.lblFVersion});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 406);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 428);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(800, 22);
             this.statusStrip1.TabIndex = 0;
@@ -106,291 +107,311 @@
             // 
             this.lblDocLocation.Location = new System.Drawing.Point(13, 18);
             this.lblDocLocation.Name = "lblDocLocation";
-            this.lblDocLocation.Size = new System.Drawing.Size(189, 23);
+            this.lblDocLocation.Size = new System.Drawing.Size(265, 23);
             this.lblDocLocation.TabIndex = 1;
-            this.lblDocLocation.Text = "Path to documents on NextGenRoot";
+            this.lblDocLocation.Text = "Path to document zip file";
             // 
-            // btnSave
+            // btnSaveZPD
             // 
-            this.btnSave.Location = new System.Drawing.Point(276, 13);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 2;
-            this.btnSave.Text = "Save";
+            this.btnSaveZPD.Location = new System.Drawing.Point(284, 13);
+            this.btnSaveZPD.Name = "btnSaveZPD";
+            this.btnSaveZPD.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveZPD.TabIndex = 2;
+            this.btnSaveZPD.Text = "Save";
+            this.btnSaveZPD.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // btnDelete
+            // btnDeleteZPD
             // 
-            this.btnDelete.Location = new System.Drawing.Point(358, 13);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnDelete.TabIndex = 3;
-            this.btnDelete.Text = "Delete";
+            this.btnDeleteZPD.Location = new System.Drawing.Point(366, 13);
+            this.btnDeleteZPD.Name = "btnDeleteZPD";
+            this.btnDeleteZPD.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteZPD.TabIndex = 3;
+            this.btnDeleteZPD.Text = "Delete";
+            this.btnDeleteZPD.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // txtDocPath
+            // txtZipDocPath
             // 
-            this.txtDocPath.Location = new System.Drawing.Point(13, 43);
-            this.txtDocPath.Name = "txtDocPath";
-            this.txtDocPath.Size = new System.Drawing.Size(639, 21);
-            this.txtDocPath.TabIndex = 4;
+            this.txtZipDocPath.Location = new System.Drawing.Point(13, 45);
+            this.txtZipDocPath.Name = "txtZipDocPath";
+            this.txtZipDocPath.Size = new System.Drawing.Size(646, 21);
+            this.txtZipDocPath.TabIndex = 4;
             // 
-            // btnBrowseDP
+            // btnBrowseZDP
             // 
-            this.btnBrowseDP.Location = new System.Drawing.Point(681, 40);
-            this.btnBrowseDP.Name = "btnBrowseDP";
-            this.btnBrowseDP.Size = new System.Drawing.Size(75, 23);
-            this.btnBrowseDP.TabIndex = 5;
-            this.btnBrowseDP.Text = "Browse";
+            this.btnBrowseZDP.Location = new System.Drawing.Point(673, 45);
+            this.btnBrowseZDP.Name = "btnBrowseZDP";
+            this.btnBrowseZDP.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowseZDP.TabIndex = 5;
+            this.btnBrowseZDP.Text = "Browse";
+            this.btnBrowseZDP.Click += new System.EventHandler(this.btnBrowseZDP_Click);
             // 
             // lblLocPath
             // 
-            this.lblLocPath.Location = new System.Drawing.Point(13, 87);
+            this.lblLocPath.Location = new System.Drawing.Point(12, 89);
             this.lblLocPath.Name = "lblLocPath";
-            this.lblLocPath.Size = new System.Drawing.Size(243, 23);
+            this.lblLocPath.Size = new System.Drawing.Size(250, 23);
             this.lblLocPath.TabIndex = 6;
-            this.lblLocPath.Text = "Path on machine to save the temp directory";
+            this.lblLocPath.Text = "Path to Extract Documents";
             // 
-            // btnSaveLocal
+            // btnSaveEDP
             // 
-            this.btnSaveLocal.Location = new System.Drawing.Point(276, 82);
-            this.btnSaveLocal.Name = "btnSaveLocal";
-            this.btnSaveLocal.Size = new System.Drawing.Size(75, 23);
-            this.btnSaveLocal.TabIndex = 7;
-            this.btnSaveLocal.Text = "Save";
+            this.btnSaveEDP.Location = new System.Drawing.Point(284, 84);
+            this.btnSaveEDP.Name = "btnSaveEDP";
+            this.btnSaveEDP.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveEDP.TabIndex = 7;
+            this.btnSaveEDP.Text = "Save";
+            this.btnSaveEDP.Click += new System.EventHandler(this.btnSaveEDP_Click);
             // 
-            // btnDeleteLocal
+            // btnDeleteEDP
             // 
-            this.btnDeleteLocal.Location = new System.Drawing.Point(358, 82);
-            this.btnDeleteLocal.Name = "btnDeleteLocal";
-            this.btnDeleteLocal.Size = new System.Drawing.Size(75, 23);
-            this.btnDeleteLocal.TabIndex = 8;
-            this.btnDeleteLocal.Text = "Delete";
+            this.btnDeleteEDP.Location = new System.Drawing.Point(366, 84);
+            this.btnDeleteEDP.Name = "btnDeleteEDP";
+            this.btnDeleteEDP.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteEDP.TabIndex = 8;
+            this.btnDeleteEDP.Text = "Delete";
+            this.btnDeleteEDP.Click += new System.EventHandler(this.btnDeleteEDP_Click);
             // 
-            // txtLocalPath
+            // txtExtractDocPath
             // 
-            this.txtLocalPath.Location = new System.Drawing.Point(13, 113);
-            this.txtLocalPath.Name = "txtLocalPath";
-            this.txtLocalPath.Size = new System.Drawing.Size(639, 21);
-            this.txtLocalPath.TabIndex = 9;
+            this.txtExtractDocPath.Location = new System.Drawing.Point(13, 119);
+            this.txtExtractDocPath.Name = "txtExtractDocPath";
+            this.txtExtractDocPath.Size = new System.Drawing.Size(646, 21);
+            this.txtExtractDocPath.TabIndex = 9;
             // 
-            // btnBrowseLP
+            // btnBrowseEDP
             // 
-            this.btnBrowseLP.Location = new System.Drawing.Point(681, 113);
-            this.btnBrowseLP.Name = "btnBrowseLP";
-            this.btnBrowseLP.Size = new System.Drawing.Size(75, 23);
-            this.btnBrowseLP.TabIndex = 10;
-            this.btnBrowseLP.Text = "Browse";
+            this.btnBrowseEDP.Location = new System.Drawing.Point(673, 117);
+            this.btnBrowseEDP.Name = "btnBrowseEDP";
+            this.btnBrowseEDP.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowseEDP.TabIndex = 10;
+            this.btnBrowseEDP.Text = "Browse";
+            this.btnBrowseEDP.Click += new System.EventHandler(this.btnBrowseEDP_Click);
             // 
             // lblUmageZipPath
             // 
-            this.lblUmageZipPath.Location = new System.Drawing.Point(13, 165);
+            this.lblUmageZipPath.Location = new System.Drawing.Point(13, 162);
             this.lblUmageZipPath.Name = "lblUmageZipPath";
-            this.lblUmageZipPath.Size = new System.Drawing.Size(243, 23);
+            this.lblUmageZipPath.Size = new System.Drawing.Size(249, 23);
             this.lblUmageZipPath.TabIndex = 11;
-            this.lblUmageZipPath.Text = "Path to image ZIP file";
+            this.lblUmageZipPath.Text = "Path to images";
             // 
-            // btnSaveImageZip
+            // btnSaveIP
             // 
-            this.btnSaveImageZip.Location = new System.Drawing.Point(276, 160);
-            this.btnSaveImageZip.Name = "btnSaveImageZip";
-            this.btnSaveImageZip.Size = new System.Drawing.Size(75, 23);
-            this.btnSaveImageZip.TabIndex = 12;
-            this.btnSaveImageZip.Text = "Save";
+            this.btnSaveIP.Location = new System.Drawing.Point(284, 157);
+            this.btnSaveIP.Name = "btnSaveIP";
+            this.btnSaveIP.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveIP.TabIndex = 12;
+            this.btnSaveIP.Text = "Save";
+            this.btnSaveIP.Click += new System.EventHandler(this.btnSaveIP_Click);
             // 
-            // btnDeleteImageZip
+            // btnDeleteIP
             // 
-            this.btnDeleteImageZip.Location = new System.Drawing.Point(358, 159);
-            this.btnDeleteImageZip.Name = "btnDeleteImageZip";
-            this.btnDeleteImageZip.Size = new System.Drawing.Size(75, 23);
-            this.btnDeleteImageZip.TabIndex = 13;
-            this.btnDeleteImageZip.Text = "Delete";
+            this.btnDeleteIP.Location = new System.Drawing.Point(366, 157);
+            this.btnDeleteIP.Name = "btnDeleteIP";
+            this.btnDeleteIP.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteIP.TabIndex = 13;
+            this.btnDeleteIP.Text = "Delete";
+            this.btnDeleteIP.Click += new System.EventHandler(this.btnDeleteIP_Click);
             // 
-            // txtImageZip
+            // txtImagePath
             // 
-            this.txtImageZip.Location = new System.Drawing.Point(13, 190);
-            this.txtImageZip.Name = "txtImageZip";
-            this.txtImageZip.Size = new System.Drawing.Size(639, 21);
-            this.txtImageZip.TabIndex = 14;
+            this.txtImagePath.Location = new System.Drawing.Point(13, 192);
+            this.txtImagePath.Name = "txtImagePath";
+            this.txtImagePath.Size = new System.Drawing.Size(646, 21);
+            this.txtImagePath.TabIndex = 14;
             // 
-            // btnBrowseIZ
+            // btnBrowseIP
             // 
-            this.btnBrowseIZ.Location = new System.Drawing.Point(681, 187);
-            this.btnBrowseIZ.Name = "btnBrowseIZ";
-            this.btnBrowseIZ.Size = new System.Drawing.Size(75, 23);
-            this.btnBrowseIZ.TabIndex = 15;
-            this.btnBrowseIZ.Text = "Browse";
+            this.btnBrowseIP.Location = new System.Drawing.Point(673, 192);
+            this.btnBrowseIP.Name = "btnBrowseIP";
+            this.btnBrowseIP.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowseIP.TabIndex = 15;
+            this.btnBrowseIP.Text = "Browse";
+            this.btnBrowseIP.Click += new System.EventHandler(this.btnBrowseIP_Click);
             // 
             // lblImageExtractPath
             // 
-            this.lblImageExtractPath.Location = new System.Drawing.Point(13, 234);
+            this.lblImageExtractPath.Location = new System.Drawing.Point(13, 236);
             this.lblImageExtractPath.Name = "lblImageExtractPath";
-            this.lblImageExtractPath.Size = new System.Drawing.Size(243, 23);
+            this.lblImageExtractPath.Size = new System.Drawing.Size(249, 23);
             this.lblImageExtractPath.TabIndex = 16;
-            this.lblImageExtractPath.Text = "Path to extract image files";
+            this.lblImageExtractPath.Text = "Path to send image zip file";
             // 
-            // btnSaveImageExtract
+            // btnSaveIZP
             // 
-            this.btnSaveImageExtract.Location = new System.Drawing.Point(276, 228);
-            this.btnSaveImageExtract.Name = "btnSaveImageExtract";
-            this.btnSaveImageExtract.Size = new System.Drawing.Size(75, 23);
-            this.btnSaveImageExtract.TabIndex = 17;
-            this.btnSaveImageExtract.Text = "Save";
+            this.btnSaveIZP.Location = new System.Drawing.Point(284, 231);
+            this.btnSaveIZP.Name = "btnSaveIZP";
+            this.btnSaveIZP.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveIZP.TabIndex = 17;
+            this.btnSaveIZP.Text = "Save";
+            this.btnSaveIZP.Click += new System.EventHandler(this.btnSaveIZP_Click);
             // 
-            // btnImageExtractDelete
+            // btnDeleteIZP
             // 
-            this.btnImageExtractDelete.Location = new System.Drawing.Point(358, 229);
-            this.btnImageExtractDelete.Name = "btnImageExtractDelete";
-            this.btnImageExtractDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnImageExtractDelete.TabIndex = 18;
-            this.btnImageExtractDelete.Text = "Delete";
+            this.btnDeleteIZP.Location = new System.Drawing.Point(366, 231);
+            this.btnDeleteIZP.Name = "btnDeleteIZP";
+            this.btnDeleteIZP.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteIZP.TabIndex = 18;
+            this.btnDeleteIZP.Text = "Delete";
+            this.btnDeleteIZP.Click += new System.EventHandler(this.btnDeleteIZP_Click);
             // 
-            // txtImageExtract
+            // txtImageZipPath
             // 
-            this.txtImageExtract.Location = new System.Drawing.Point(13, 259);
-            this.txtImageExtract.Name = "txtImageExtract";
-            this.txtImageExtract.Size = new System.Drawing.Size(639, 21);
-            this.txtImageExtract.TabIndex = 19;
+            this.txtImageZipPath.Location = new System.Drawing.Point(13, 266);
+            this.txtImageZipPath.Name = "txtImageZipPath";
+            this.txtImageZipPath.Size = new System.Drawing.Size(646, 21);
+            this.txtImageZipPath.TabIndex = 19;
             // 
-            // btnBrowseIE
+            // btnBrowseIZP
             // 
-            this.btnBrowseIE.Location = new System.Drawing.Point(681, 259);
-            this.btnBrowseIE.Name = "btnBrowseIE";
-            this.btnBrowseIE.Size = new System.Drawing.Size(75, 23);
-            this.btnBrowseIE.TabIndex = 20;
-            this.btnBrowseIE.Text = "Browse";
+            this.btnBrowseIZP.Location = new System.Drawing.Point(673, 266);
+            this.btnBrowseIZP.Name = "btnBrowseIZP";
+            this.btnBrowseIZP.Size = new System.Drawing.Size(75, 23);
+            this.btnBrowseIZP.TabIndex = 20;
+            this.btnBrowseIZP.Text = "Browse";
+            this.btnBrowseIZP.Click += new System.EventHandler(this.btnBrowseIZP_Click);
+            // 
+            // lblSmtp
+            // 
+            this.lblSmtp.Location = new System.Drawing.Point(13, 318);
+            this.lblSmtp.Name = "lblSmtp";
+            this.lblSmtp.Size = new System.Drawing.Size(100, 18);
+            this.lblSmtp.TabIndex = 21;
+            this.lblSmtp.Text = "SMTP";
+            // 
+            // btnSaveSmtp
+            // 
+            this.btnSaveSmtp.Location = new System.Drawing.Point(120, 313);
+            this.btnSaveSmtp.Name = "btnSaveSmtp";
+            this.btnSaveSmtp.Size = new System.Drawing.Size(75, 23);
+            this.btnSaveSmtp.TabIndex = 22;
+            this.btnSaveSmtp.Text = "Save";
+            this.btnSaveSmtp.Click += new System.EventHandler(this.btnSaveSmtp_Click);
+            // 
+            // btnDeleteSmtp
+            // 
+            this.btnDeleteSmtp.Location = new System.Drawing.Point(202, 313);
+            this.btnDeleteSmtp.Name = "btnDeleteSmtp";
+            this.btnDeleteSmtp.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteSmtp.TabIndex = 23;
+            this.btnDeleteSmtp.Text = "Delete";
+            this.btnDeleteSmtp.Click += new System.EventHandler(this.btnDeleteSmtp_Click);
+            // 
+            // txtSMTP
+            // 
+            this.txtSMTP.Location = new System.Drawing.Point(13, 343);
+            this.txtSMTP.Name = "txtSMTP";
+            this.txtSMTP.Size = new System.Drawing.Size(264, 21);
+            this.txtSMTP.TabIndex = 24;
             // 
             // ultraLabel1
             // 
-            this.ultraLabel1.Location = new System.Drawing.Point(13, 301);
+            this.ultraLabel1.Location = new System.Drawing.Point(322, 313);
             this.ultraLabel1.Name = "ultraLabel1";
-            this.ultraLabel1.Size = new System.Drawing.Size(154, 23);
-            this.ultraLabel1.TabIndex = 21;
-            this.ultraLabel1.Text = "Days till Garbage Collection";
+            this.ultraLabel1.Size = new System.Drawing.Size(109, 23);
+            this.ultraLabel1.TabIndex = 25;
+            this.ultraLabel1.Text = "Garbage Collection";
             // 
             // btnSaveGC
             // 
-            this.btnSaveGC.Location = new System.Drawing.Point(181, 296);
+            this.btnSaveGC.Location = new System.Drawing.Point(438, 313);
             this.btnSaveGC.Name = "btnSaveGC";
             this.btnSaveGC.Size = new System.Drawing.Size(75, 23);
-            this.btnSaveGC.TabIndex = 22;
+            this.btnSaveGC.TabIndex = 26;
             this.btnSaveGC.Text = "Save";
+            this.btnSaveGC.Click += new System.EventHandler(this.btnSaveGC_Click);
             // 
             // btnDeleteGC
             // 
-            this.btnDeleteGC.Location = new System.Drawing.Point(263, 296);
+            this.btnDeleteGC.Location = new System.Drawing.Point(520, 313);
             this.btnDeleteGC.Name = "btnDeleteGC";
             this.btnDeleteGC.Size = new System.Drawing.Size(75, 23);
-            this.btnDeleteGC.TabIndex = 23;
+            this.btnDeleteGC.TabIndex = 27;
             this.btnDeleteGC.Text = "Delete";
-            // 
-            // ultraLabel2
-            // 
-            this.ultraLabel2.Location = new System.Drawing.Point(389, 301);
-            this.ultraLabel2.Name = "ultraLabel2";
-            this.ultraLabel2.Size = new System.Drawing.Size(75, 23);
-            this.ultraLabel2.TabIndex = 24;
-            this.ultraLabel2.Text = "Appt # days";
-            // 
-            // btnSaveAppt
-            // 
-            this.btnSaveAppt.Location = new System.Drawing.Point(470, 296);
-            this.btnSaveAppt.Name = "btnSaveAppt";
-            this.btnSaveAppt.Size = new System.Drawing.Size(75, 23);
-            this.btnSaveAppt.TabIndex = 25;
-            this.btnSaveAppt.Text = "Save";
-            // 
-            // btnDeleteAppt
-            // 
-            this.btnDeleteAppt.Location = new System.Drawing.Point(552, 296);
-            this.btnDeleteAppt.Name = "btnDeleteAppt";
-            this.btnDeleteAppt.Size = new System.Drawing.Size(75, 23);
-            this.btnDeleteAppt.TabIndex = 26;
-            this.btnDeleteAppt.Text = "Delete";
+            this.btnDeleteGC.Click += new System.EventHandler(this.btnDeleteGC_Click);
             // 
             // uneGC
             // 
-            this.uneGC.Location = new System.Drawing.Point(13, 330);
+            this.uneGC.Location = new System.Drawing.Point(322, 343);
             this.uneGC.Name = "uneGC";
             this.uneGC.Size = new System.Drawing.Size(100, 21);
-            this.uneGC.TabIndex = 27;
-            // 
-            // neAppt
-            // 
-            this.neAppt.Location = new System.Drawing.Point(389, 329);
-            this.neAppt.Name = "neAppt";
-            this.neAppt.Size = new System.Drawing.Size(75, 21);
-            this.neAppt.TabIndex = 28;
+            this.uneGC.TabIndex = 28;
             // 
             // btnSaveAll
             // 
-            this.btnSaveAll.Location = new System.Drawing.Point(13, 373);
+            this.btnSaveAll.Location = new System.Drawing.Point(57, 382);
             this.btnSaveAll.Name = "btnSaveAll";
             this.btnSaveAll.Size = new System.Drawing.Size(75, 23);
             this.btnSaveAll.TabIndex = 29;
             this.btnSaveAll.Text = "Save All";
+            this.btnSaveAll.Click += new System.EventHandler(this.btnSaveAll_Click);
             // 
             // btnDeleteAll
             // 
-            this.btnDeleteAll.Location = new System.Drawing.Point(94, 373);
+            this.btnDeleteAll.Location = new System.Drawing.Point(139, 382);
             this.btnDeleteAll.Name = "btnDeleteAll";
             this.btnDeleteAll.Size = new System.Drawing.Size(75, 23);
             this.btnDeleteAll.TabIndex = 30;
             this.btnDeleteAll.Text = "Delete All";
+            this.btnDeleteAll.Click += new System.EventHandler(this.btnDeleteAll_Click);
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(176, 373);
+            this.btnClose.Location = new System.Drawing.Point(248, 382);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 31;
             this.btnClose.Text = "Close";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // EMRFileSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 428);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnDeleteAll);
             this.Controls.Add(this.btnSaveAll);
-            this.Controls.Add(this.neAppt);
             this.Controls.Add(this.uneGC);
-            this.Controls.Add(this.btnDeleteAppt);
-            this.Controls.Add(this.btnSaveAppt);
-            this.Controls.Add(this.ultraLabel2);
             this.Controls.Add(this.btnDeleteGC);
             this.Controls.Add(this.btnSaveGC);
             this.Controls.Add(this.ultraLabel1);
-            this.Controls.Add(this.btnBrowseIE);
-            this.Controls.Add(this.txtImageExtract);
-            this.Controls.Add(this.btnImageExtractDelete);
-            this.Controls.Add(this.btnSaveImageExtract);
+            this.Controls.Add(this.txtSMTP);
+            this.Controls.Add(this.btnDeleteSmtp);
+            this.Controls.Add(this.btnSaveSmtp);
+            this.Controls.Add(this.lblSmtp);
+            this.Controls.Add(this.btnBrowseIZP);
+            this.Controls.Add(this.txtImageZipPath);
+            this.Controls.Add(this.btnDeleteIZP);
+            this.Controls.Add(this.btnSaveIZP);
             this.Controls.Add(this.lblImageExtractPath);
-            this.Controls.Add(this.btnBrowseIZ);
-            this.Controls.Add(this.txtImageZip);
-            this.Controls.Add(this.btnDeleteImageZip);
-            this.Controls.Add(this.btnSaveImageZip);
+            this.Controls.Add(this.btnBrowseIP);
+            this.Controls.Add(this.txtImagePath);
+            this.Controls.Add(this.btnDeleteIP);
+            this.Controls.Add(this.btnSaveIP);
             this.Controls.Add(this.lblUmageZipPath);
-            this.Controls.Add(this.btnBrowseLP);
-            this.Controls.Add(this.txtLocalPath);
-            this.Controls.Add(this.btnDeleteLocal);
-            this.Controls.Add(this.btnSaveLocal);
+            this.Controls.Add(this.btnBrowseEDP);
+            this.Controls.Add(this.txtExtractDocPath);
+            this.Controls.Add(this.btnDeleteEDP);
+            this.Controls.Add(this.btnSaveEDP);
             this.Controls.Add(this.lblLocPath);
-            this.Controls.Add(this.btnBrowseDP);
-            this.Controls.Add(this.txtDocPath);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnBrowseZDP);
+            this.Controls.Add(this.txtZipDocPath);
+            this.Controls.Add(this.btnDeleteZPD);
+            this.Controls.Add(this.btnSaveZPD);
             this.Controls.Add(this.lblDocLocation);
             this.Controls.Add(this.statusStrip1);
             this.Name = "EMRFileSystem";
             this.Text = "EMR File System";
+            this.Load += new System.EventHandler(this.EMRFileSystem_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDocPath)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtLocalPath)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtImageZip)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtImageExtract)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtZipDocPath)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtExtractDocPath)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtImagePath)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtImageZipPath)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSMTP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uneGC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.neAppt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -403,35 +424,36 @@
         private System.Windows.Forms.ToolStripStatusLabel lblDB;
         private System.Windows.Forms.ToolStripStatusLabel lblFVersion;
         private Infragistics.Win.Misc.UltraLabel lblDocLocation;
-        private Infragistics.Win.Misc.UltraButton btnSave;
-        private Infragistics.Win.Misc.UltraButton btnDelete;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor txtDocPath;
-        private Infragistics.Win.Misc.UltraButton btnBrowseDP;
+        private Infragistics.Win.Misc.UltraButton btnSaveZPD;
+        private Infragistics.Win.Misc.UltraButton btnDeleteZPD;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor txtZipDocPath;
+        private Infragistics.Win.Misc.UltraButton btnBrowseZDP;
         private Infragistics.Win.Misc.UltraLabel lblLocPath;
-        private Infragistics.Win.Misc.UltraButton btnSaveLocal;
-        private Infragistics.Win.Misc.UltraButton btnDeleteLocal;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor txtLocalPath;
-        private Infragistics.Win.Misc.UltraButton btnBrowseLP;
+        private Infragistics.Win.Misc.UltraButton btnSaveEDP;
+        private Infragistics.Win.Misc.UltraButton btnDeleteEDP;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor txtExtractDocPath;
+        private Infragistics.Win.Misc.UltraButton btnBrowseEDP;
         private Infragistics.Win.Misc.UltraLabel lblUmageZipPath;
-        private Infragistics.Win.Misc.UltraButton btnSaveImageZip;
-        private Infragistics.Win.Misc.UltraButton btnDeleteImageZip;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor txtImageZip;
-        private Infragistics.Win.Misc.UltraButton btnBrowseIZ;
+        private Infragistics.Win.Misc.UltraButton btnSaveIP;
+        private Infragistics.Win.Misc.UltraButton btnDeleteIP;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor txtImagePath;
+        private Infragistics.Win.Misc.UltraButton btnBrowseIP;
         private Infragistics.Win.Misc.UltraLabel lblImageExtractPath;
-        private Infragistics.Win.Misc.UltraButton btnSaveImageExtract;
-        private Infragistics.Win.Misc.UltraButton btnImageExtractDelete;
-        private Infragistics.Win.UltraWinEditors.UltraTextEditor txtImageExtract;
-        private Infragistics.Win.Misc.UltraButton btnBrowseIE;
+        private Infragistics.Win.Misc.UltraButton btnSaveIZP;
+        private Infragistics.Win.Misc.UltraButton btnDeleteIZP;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor txtImageZipPath;
+        private Infragistics.Win.Misc.UltraButton btnBrowseIZP;
+        private Infragistics.Win.Misc.UltraLabel lblSmtp;
+        private Infragistics.Win.Misc.UltraButton btnSaveSmtp;
+        private Infragistics.Win.Misc.UltraButton btnDeleteSmtp;
+        private Infragistics.Win.UltraWinEditors.UltraTextEditor txtSMTP;
         private Infragistics.Win.Misc.UltraLabel ultraLabel1;
         private Infragistics.Win.Misc.UltraButton btnSaveGC;
         private Infragistics.Win.Misc.UltraButton btnDeleteGC;
-        private Infragistics.Win.Misc.UltraLabel ultraLabel2;
-        private Infragistics.Win.Misc.UltraButton btnSaveAppt;
-        private Infragistics.Win.Misc.UltraButton btnDeleteAppt;
         private Infragistics.Win.UltraWinEditors.UltraNumericEditor uneGC;
-        private Infragistics.Win.UltraWinEditors.UltraNumericEditor neAppt;
         private Infragistics.Win.Misc.UltraButton btnSaveAll;
         private Infragistics.Win.Misc.UltraButton btnDeleteAll;
         private Infragistics.Win.Misc.UltraButton btnClose;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }
