@@ -56,19 +56,12 @@
             this.dtApptDate = new Infragistics.Win.UltraWinEditors.UltraDateTimeEditor();
             this.lblLocation = new Infragistics.Win.Misc.UltraLabel();
             this.cmbLocation = new Infragistics.Win.UltraWinGrid.UltraCombo();
-            this.cbLimitEnc = new Infragistics.Win.UltraWinEditors.UltraCheckEditor();
-            this.lblLimitEnc = new Infragistics.Win.Misc.UltraLabel();
-            this.uneEncCount = new Infragistics.Win.UltraWinEditors.UltraNumericEditor();
-            this.lblEmc = new Infragistics.Win.Misc.UltraLabel();
             this.cbSameProvider = new Infragistics.Win.UltraWinEditors.UltraCheckEditor();
-            this.btnCreate = new Infragistics.Win.Misc.UltraButton();
-            this.btnUnzip = new Infragistics.Win.Misc.UltraButton();
+            this.btnTransfer = new Infragistics.Win.Misc.UltraButton();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtApptDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbLocation)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbLimitEnc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uneEncCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbSameProvider)).BeginInit();
             this.SuspendLayout();
             // 
@@ -138,7 +131,7 @@
             this.lblAppVersion,
             this.lblDB,
             this.lblFVersion});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 230);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 211);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(800, 22);
             this.statusStrip1.TabIndex = 1;
@@ -164,24 +157,24 @@
             // 
             // lblDate
             // 
-            this.lblDate.Location = new System.Drawing.Point(12, 43);
+            this.lblDate.Location = new System.Drawing.Point(13, 45);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(64, 23);
+            this.lblDate.Size = new System.Drawing.Size(70, 23);
             this.lblDate.TabIndex = 2;
             this.lblDate.Text = "Appt Date";
             // 
             // dtApptDate
             // 
-            this.dtApptDate.Location = new System.Drawing.Point(82, 39);
+            this.dtApptDate.Location = new System.Drawing.Point(89, 41);
             this.dtApptDate.Name = "dtApptDate";
-            this.dtApptDate.Size = new System.Drawing.Size(91, 21);
+            this.dtApptDate.Size = new System.Drawing.Size(90, 21);
             this.dtApptDate.TabIndex = 3;
             // 
             // lblLocation
             // 
-            this.lblLocation.Location = new System.Drawing.Point(14, 73);
+            this.lblLocation.Location = new System.Drawing.Point(13, 75);
             this.lblLocation.Name = "lblLocation";
-            this.lblLocation.Size = new System.Drawing.Size(63, 23);
+            this.lblLocation.Size = new System.Drawing.Size(70, 23);
             this.lblLocation.TabIndex = 4;
             this.lblLocation.Text = "Location";
             // 
@@ -241,79 +234,35 @@
             this.cmbLocation.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
             this.cmbLocation.DisplayLayout.ScrollStyle = Infragistics.Win.UltraWinGrid.ScrollStyle.Immediate;
             this.cmbLocation.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.OutlookGroupBy;
-            this.cmbLocation.Location = new System.Drawing.Point(83, 73);
+            this.cmbLocation.Location = new System.Drawing.Point(89, 75);
             this.cmbLocation.Name = "cmbLocation";
-            this.cmbLocation.Size = new System.Drawing.Size(314, 22);
+            this.cmbLocation.Size = new System.Drawing.Size(266, 22);
             this.cmbLocation.TabIndex = 5;
-            // 
-            // cbLimitEnc
-            // 
-            this.cbLimitEnc.Location = new System.Drawing.Point(14, 103);
-            this.cbLimitEnc.Name = "cbLimitEnc";
-            this.cbLimitEnc.Size = new System.Drawing.Size(120, 20);
-            this.cbLimitEnc.TabIndex = 6;
-            this.cbLimitEnc.Text = "Limit Encounters";
-            // 
-            // lblLimitEnc
-            // 
-            this.lblLimitEnc.Location = new System.Drawing.Point(128, 106);
-            this.lblLimitEnc.Name = "lblLimitEnc";
-            this.lblLimitEnc.Size = new System.Drawing.Size(174, 23);
-            this.lblLimitEnc.TabIndex = 7;
-            this.lblLimitEnc.Text = "Only bring documents from last";
-            // 
-            // uneEncCount
-            // 
-            this.uneEncCount.Location = new System.Drawing.Point(294, 101);
-            this.uneEncCount.Name = "uneEncCount";
-            this.uneEncCount.Size = new System.Drawing.Size(37, 21);
-            this.uneEncCount.TabIndex = 8;
-            // 
-            // lblEmc
-            // 
-            this.lblEmc.Location = new System.Drawing.Point(337, 106);
-            this.lblEmc.Name = "lblEmc";
-            this.lblEmc.Size = new System.Drawing.Size(100, 23);
-            this.lblEmc.TabIndex = 9;
-            this.lblEmc.Text = "encounters";
             // 
             // cbSameProvider
             // 
-            this.cbSameProvider.Location = new System.Drawing.Point(13, 130);
+            this.cbSameProvider.Location = new System.Drawing.Point(13, 112);
             this.cbSameProvider.Name = "cbSameProvider";
-            this.cbSameProvider.Size = new System.Drawing.Size(609, 20);
-            this.cbSameProvider.TabIndex = 10;
-            this.cbSameProvider.Text = "Get ONLY Documents whose rendering provider is the same as the rendering prodiver" +
-    " on the upcoming appointment";
+            this.cbSameProvider.Size = new System.Drawing.Size(619, 20);
+            this.cbSameProvider.TabIndex = 6;
+            this.cbSameProvider.Text = "Verify ONLY dociment whose rendering provider is the same as the rendering provid" +
+    "er on the upcoming appointment";
             // 
-            // btnCreate
+            // btnTransfer
             // 
-            this.btnCreate.Location = new System.Drawing.Point(24, 157);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(110, 23);
-            this.btnCreate.TabIndex = 11;
-            this.btnCreate.Text = "Create Files";
-            // 
-            // btnUnzip
-            // 
-            this.btnUnzip.Location = new System.Drawing.Point(141, 156);
-            this.btnUnzip.Name = "btnUnzip";
-            this.btnUnzip.Size = new System.Drawing.Size(95, 23);
-            this.btnUnzip.TabIndex = 12;
-            this.btnUnzip.Text = "Unzip Images";
+            this.btnTransfer.Location = new System.Drawing.Point(23, 147);
+            this.btnTransfer.Name = "btnTransfer";
+            this.btnTransfer.Size = new System.Drawing.Size(98, 23);
+            this.btnTransfer.TabIndex = 7;
+            this.btnTransfer.Text = "Transfer Files";
             // 
             // DR_Workstation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 252);
-            this.Controls.Add(this.btnUnzip);
-            this.Controls.Add(this.btnCreate);
+            this.ClientSize = new System.Drawing.Size(800, 233);
+            this.Controls.Add(this.btnTransfer);
             this.Controls.Add(this.cbSameProvider);
-            this.Controls.Add(this.lblEmc);
-            this.Controls.Add(this.uneEncCount);
-            this.Controls.Add(this.lblLimitEnc);
-            this.Controls.Add(this.cbLimitEnc);
             this.Controls.Add(this.cmbLocation);
             this.Controls.Add(this.lblLocation);
             this.Controls.Add(this.dtApptDate);
@@ -323,15 +272,12 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "DR_Workstation";
             this.Text = "NextGen Nightly File Creator";
-            this.Load += new System.EventHandler(this.DR_Workstation_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtApptDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbLocation)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbLimitEnc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uneEncCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbSameProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -356,13 +302,8 @@
         private Infragistics.Win.UltraWinEditors.UltraDateTimeEditor dtApptDate;
         private Infragistics.Win.Misc.UltraLabel lblLocation;
         private Infragistics.Win.UltraWinGrid.UltraCombo cmbLocation;
-        private Infragistics.Win.UltraWinEditors.UltraCheckEditor cbLimitEnc;
-        private Infragistics.Win.Misc.UltraLabel lblLimitEnc;
-        private Infragistics.Win.UltraWinEditors.UltraNumericEditor uneEncCount;
-        private Infragistics.Win.Misc.UltraLabel lblEmc;
         private Infragistics.Win.UltraWinEditors.UltraCheckEditor cbSameProvider;
-        private Infragistics.Win.Misc.UltraButton btnCreate;
-        private Infragistics.Win.Misc.UltraButton btnUnzip;
+        private Infragistics.Win.Misc.UltraButton btnTransfer;
     }
 }
 
