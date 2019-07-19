@@ -13,6 +13,7 @@ using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Infragistics.Win;
 using JTay.FrameWork;
 using JTay.FrameWork.Enumerators;
 using JTay.FrameWork.Interfaces;
@@ -57,15 +58,16 @@ namespace NGDR_Workstation
                 CollectGarbage();
                 if (!string.IsNullOrEmpty(location))
                 {
-                    foreach (DataRowView item in cmbLocation.Items)
+                    foreach (ValueListItem item in cmbLocation.Items)
                     {
                         if (string.Compare(item[0].ToString(), location, true) != 0) continue;
                         cmbLocation.SelectedItem = item;
                         break;
                     }
+
                     cbSameProvider.Checked = sameProvider;
                     dtApptDate.Value = DateTime.Now.AddDays(1);
-                    MoveAndExtract();
+                    //MoveAndExtract()
                 }
             }
             catch (Exception exc)

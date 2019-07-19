@@ -28,18 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance6 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance7 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance8 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance9 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance10 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance11 = new Infragistics.Win.Appearance();
-            Infragistics.Win.Appearance appearance12 = new Infragistics.Win.Appearance();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,14 +43,14 @@
             this.lblDate = new Infragistics.Win.Misc.UltraLabel();
             this.dtApptDate = new Infragistics.Win.UltraWinEditors.UltraDateTimeEditor();
             this.lblLocation = new Infragistics.Win.Misc.UltraLabel();
-            this.cmbLocation = new Infragistics.Win.UltraWinGrid.UltraCombo();
             this.cbSameProvider = new Infragistics.Win.UltraWinEditors.UltraCheckEditor();
             this.btnTransfer = new Infragistics.Win.Misc.UltraButton();
+            this.cmbLocation = new Infragistics.Win.UltraWinEditors.UltraComboEditor();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtApptDate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbLocation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbSameProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbLocation)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -178,67 +166,6 @@
             this.lblLocation.TabIndex = 4;
             this.lblLocation.Text = "Location";
             // 
-            // cmbLocation
-            // 
-            appearance1.BackColor = System.Drawing.SystemColors.Window;
-            appearance1.BorderColor = System.Drawing.SystemColors.InactiveCaption;
-            this.cmbLocation.DisplayLayout.Appearance = appearance1;
-            this.cmbLocation.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
-            this.cmbLocation.DisplayLayout.CaptionVisible = Infragistics.Win.DefaultableBoolean.False;
-            appearance2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            appearance2.BackColor2 = System.Drawing.SystemColors.ControlDark;
-            appearance2.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
-            appearance2.BorderColor = System.Drawing.SystemColors.Window;
-            this.cmbLocation.DisplayLayout.GroupByBox.Appearance = appearance2;
-            appearance3.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.cmbLocation.DisplayLayout.GroupByBox.BandLabelAppearance = appearance3;
-            this.cmbLocation.DisplayLayout.GroupByBox.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
-            appearance4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            appearance4.BackColor2 = System.Drawing.SystemColors.Control;
-            appearance4.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance4.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.cmbLocation.DisplayLayout.GroupByBox.PromptAppearance = appearance4;
-            this.cmbLocation.DisplayLayout.MaxColScrollRegions = 1;
-            this.cmbLocation.DisplayLayout.MaxRowScrollRegions = 1;
-            appearance5.BackColor = System.Drawing.SystemColors.Window;
-            appearance5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.cmbLocation.DisplayLayout.Override.ActiveCellAppearance = appearance5;
-            appearance6.BackColor = System.Drawing.SystemColors.Highlight;
-            appearance6.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.cmbLocation.DisplayLayout.Override.ActiveRowAppearance = appearance6;
-            this.cmbLocation.DisplayLayout.Override.BorderStyleCell = Infragistics.Win.UIElementBorderStyle.Dotted;
-            this.cmbLocation.DisplayLayout.Override.BorderStyleRow = Infragistics.Win.UIElementBorderStyle.Dotted;
-            appearance7.BackColor = System.Drawing.SystemColors.Window;
-            this.cmbLocation.DisplayLayout.Override.CardAreaAppearance = appearance7;
-            appearance8.BorderColor = System.Drawing.Color.Silver;
-            appearance8.TextTrimming = Infragistics.Win.TextTrimming.EllipsisCharacter;
-            this.cmbLocation.DisplayLayout.Override.CellAppearance = appearance8;
-            this.cmbLocation.DisplayLayout.Override.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.EditAndSelectText;
-            this.cmbLocation.DisplayLayout.Override.CellPadding = 0;
-            appearance9.BackColor = System.Drawing.SystemColors.Control;
-            appearance9.BackColor2 = System.Drawing.SystemColors.ControlDark;
-            appearance9.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
-            appearance9.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
-            appearance9.BorderColor = System.Drawing.SystemColors.Window;
-            this.cmbLocation.DisplayLayout.Override.GroupByRowAppearance = appearance9;
-            appearance10.TextHAlignAsString = "Left";
-            this.cmbLocation.DisplayLayout.Override.HeaderAppearance = appearance10;
-            this.cmbLocation.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti;
-            this.cmbLocation.DisplayLayout.Override.HeaderStyle = Infragistics.Win.HeaderStyle.WindowsXPCommand;
-            appearance11.BackColor = System.Drawing.SystemColors.Window;
-            appearance11.BorderColor = System.Drawing.Color.Silver;
-            this.cmbLocation.DisplayLayout.Override.RowAppearance = appearance11;
-            this.cmbLocation.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
-            appearance12.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.cmbLocation.DisplayLayout.Override.TemplateAddRowAppearance = appearance12;
-            this.cmbLocation.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
-            this.cmbLocation.DisplayLayout.ScrollStyle = Infragistics.Win.UltraWinGrid.ScrollStyle.Immediate;
-            this.cmbLocation.DisplayLayout.ViewStyleBand = Infragistics.Win.UltraWinGrid.ViewStyleBand.OutlookGroupBy;
-            this.cmbLocation.Location = new System.Drawing.Point(89, 75);
-            this.cmbLocation.Name = "cmbLocation";
-            this.cmbLocation.Size = new System.Drawing.Size(266, 22);
-            this.cmbLocation.TabIndex = 5;
-            // 
             // cbSameProvider
             // 
             this.cbSameProvider.Location = new System.Drawing.Point(13, 112);
@@ -256,14 +183,21 @@
             this.btnTransfer.TabIndex = 7;
             this.btnTransfer.Text = "Transfer Files";
             // 
+            // cmbLocation
+            // 
+            this.cmbLocation.Location = new System.Drawing.Point(89, 71);
+            this.cmbLocation.Name = "cmbLocation";
+            this.cmbLocation.Size = new System.Drawing.Size(224, 21);
+            this.cmbLocation.TabIndex = 8;
+            // 
             // DR_Workstation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 233);
+            this.Controls.Add(this.cmbLocation);
             this.Controls.Add(this.btnTransfer);
             this.Controls.Add(this.cbSameProvider);
-            this.Controls.Add(this.cmbLocation);
             this.Controls.Add(this.lblLocation);
             this.Controls.Add(this.dtApptDate);
             this.Controls.Add(this.lblDate);
@@ -278,8 +212,8 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtApptDate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbLocation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbSameProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbLocation)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -302,9 +236,9 @@
         private Infragistics.Win.Misc.UltraLabel lblDate;
         private Infragistics.Win.UltraWinEditors.UltraDateTimeEditor dtApptDate;
         private Infragistics.Win.Misc.UltraLabel lblLocation;
-        private Infragistics.Win.UltraWinGrid.UltraCombo cmbLocation;
         private Infragistics.Win.UltraWinEditors.UltraCheckEditor cbSameProvider;
         private Infragistics.Win.Misc.UltraButton btnTransfer;
+        private Infragistics.Win.UltraWinEditors.UltraComboEditor cmbLocation;
     }
 }
 
