@@ -272,6 +272,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "DR_Workstation";
             this.Text = "NextGen Nightly File Creator";
+            this.Load += new System.EventHandler(this.DR_Workstation_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
